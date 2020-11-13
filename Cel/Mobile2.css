@@ -1,0 +1,134 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: 0;
+}
+
+
+body{
+	background-color: bisque;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.contenedor-celular{
+	width: 320px;
+	height: 480px;
+	background-color: pink;
+	border-radius: 15px;
+	position:relative;
+}
+
+/* Cabeza*/
+.caja-superior{
+	width: 320px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	padding: 0.5rem;
+	position: relative;
+}
+.camara{
+	width: 20px;
+	height:  20px;
+	border-radius: 50%;
+	background-color: lightblue;
+	border: 2px solid red;
+	margin-left: 16px;
+	margin-right: 16px;
+}
+
+.notificaciones{
+	width: 10px;
+	height: 10px;
+	background-color: lightgreen;
+	border-radius: 50%;
+	animation: efecto 1s infinite;
+}
+
+@keyframes efecto {
+		0%{
+
+			opacity: 1;
+		}
+
+		50% {
+			opacity: 0.5;
+		}
+
+		100%{
+			opacity: 1;
+
+		}
+}
+
+.audio{
+	width: 70px;
+	height: 6px;
+	border-radius: 10px;
+	background-color: tomato;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+
+/* Fin de cabeza*/
+
+.pantalla{
+	width: 90%;
+	margin-left: 15px;
+	height: 70%;
+	background-color: lightblue;
+	background-image: url(./potr.png);
+	background-repeat: no-repeat;
+	background-size: 150px;
+	background-position: center; 
+	animation: aumin 1s infinite;
+}
+
+	@keyframes aumin {
+		0%{
+
+			background-size: 150px;
+		}
+
+		50% {
+			background-size: 200px;
+		}
+
+		100%{
+			background-size: 150px;
+
+		}
+}
+
+
+.caja-inferior{
+	width: 320px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.boton-inicio{
+	width: 100px;
+	height: 25px;
+	background-color: #444;
+	border: 2px solid #eee;
+}
+
+
+.power{
+	position: absolute;
+	top: 70px;
+	left: -5px;
+	width: 6px;
+	height: 60px;
+	background-color: pink;
+	border-radius: 5px;
+}
